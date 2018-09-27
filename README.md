@@ -15,3 +15,15 @@ def namelist(names):
             sentence += names[words]['name'] + ', '
         sentence += (names[len(names) - 2]['name'] + ' & ' + names[len(names) - 1]['name'])
         return sentence
+Bouncing Balls
+def bouncingBall(h, bounce, window):
+    mom = 1 
+    current_height = h
+    bounce_height = h * bounce
+    while True:
+        if bounce_height < window:
+            return mom
+        bounce_height = bounce_height * bounce
+        mom += 2
+        
+        
