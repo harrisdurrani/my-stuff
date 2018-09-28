@@ -1,0 +1,24 @@
+# big n time
+def odd_count(n):
+    count = 0
+    for x in range(0, n):
+        if x % 2 == 1:
+            count += 1
+    return count
+        
+        
+
+    pass
+#  constant time  
+def odd_count(n):
+    if n % 2 == 0:
+        return n / 2
+    elif n % 2 == 1:
+        return (n -1) / 2
+    else:
+        return False
+        
+        
+
+    pass
+    
