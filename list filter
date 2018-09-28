@@ -1,0 +1,6 @@
+def filter_list(l):
+    new_list = []
+    l = [x for x in l if type(x) == int]
+    return l
+    
+     
