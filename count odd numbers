@@ -21,4 +21,6 @@ def odd_count(n):
         
 
     pass
-    
+ #how the fuck   
+def oddCount(n):
+    return n // 2
