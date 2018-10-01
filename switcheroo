@@ -1,0 +1,11 @@
+def switcheroo(string):
+    x = ''
+    for char in string:
+        if char == 'a':
+            x += 'b'
+        elif char == 'b':
+            x += 'a'
+        else:
+            x += char
+    return x
+            
