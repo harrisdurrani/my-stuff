@@ -1,0 +1,27 @@
+def reverse(s):
+        if len(s) == 0: 
+            return s 
+        else: 
+            return reverse(s[1:]) + s[0]     
+        
+def solution(n):
+    death = [['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'],
+    ['', 'X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC'],
+    ['', 'C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM'],
+    ['', 'M', 'MM', 'MMM', 'MMMM', 'MMMMM', 'MMMMMMM']]
+    
+    results = ''
+    counter = 0;
+    
+    flip = reverse(str(n))
+    
+    # reverse str(n) the string
+    
+    
+    for char in flip:
+        results = death[counter][int(char)] + results
+        counter += 1
+      
+    # reverse it back here results
+    return str(results)
+    
