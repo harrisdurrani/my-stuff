@@ -1,0 +1,10 @@
+def reverse_letter(string):
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+    the = ''
+    for char in string:
+        if char in alpha:
+            the += char
+    
+            
+    return the[::-1]
+    
