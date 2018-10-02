@@ -1,0 +1,11 @@
+def reverse(n):
+    """Returns n with all digits reversed. Assume positive n."""
+    counter = 0
+    while n > 0:
+        counter = (10*counter) + n%10
+        n //= 10
+    return counter
+    
+   #real way to do it
+   def reverse(n):
+    return int(str(n)[::-1])
