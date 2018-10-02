@@ -1,0 +1,8 @@
+def product(numbers):
+    counter = 1
+    if numbers is None or len(numbers) == 0:
+        return None
+        
+    for num in numbers:
+        counter = num * counter
+    return counter
