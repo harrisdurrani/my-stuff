@@ -1,2 +1,7 @@
 def xo(s):
   return len([o for o in s.lower() if o == 'o']) == len([x for x in s.lower() if x == 'x'])
+
+#should have done this
+def xo(s):
+s = s.lower()
+    return s.count('x') == s.count('o')
