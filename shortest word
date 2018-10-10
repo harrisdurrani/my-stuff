@@ -1,0 +1,13 @@
+def find_short(s):
+    list = s.split()
+
+    num = 100
+    for item in list:
+        if len(item) < num:
+            num = len(item)
+
+    return num
+    
+    
+    
+    return l # l: shortest word length
