@@ -4,3 +4,7 @@ def find(n):
         if (num % 3 == 0 or num % 5 == 0):
             count = count + num
     return count
+
+
+def find_short(s):
+    return min(len(x) for x in s.split())
