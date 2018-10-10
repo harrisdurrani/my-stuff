@@ -1,0 +1,6 @@
+def find(n):
+    count = 0 
+    for num in range(0, n + 1):
+        if (num % 3 == 0 or num % 5 == 0):
+            count = count + num
+    return count
