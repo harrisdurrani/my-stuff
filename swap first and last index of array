@@ -1,0 +1,8 @@
+def first_reverse_try(arr):
+    if len(arr) > 0:
+        firstindex = arr[0]
+        lastindex = arr[-1]
+        arr[0] = lastindex
+        arr[-1] = firstindex
+
+    return arr
