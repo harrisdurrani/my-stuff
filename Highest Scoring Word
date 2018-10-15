@@ -1,0 +1,27 @@
+import string
+def high(x):
+    list = x.split()
+    listvalue = []
+    score = 0
+    counter = 0
+    for item in list:
+        a = item
+        score = 0
+        for k in range (0, len(a)):
+            b = a[k]
+            position = string.ascii_lowercase.index(b)
+            score += position
+        listvalue.append(score)
+    print(listvalue)
+    test = max(listvalue)
+    print(test)
+
+    for item in listvalue:
+
+        counter += 1
+        if item == test:
+            counter -= 1
+            print(list[counter])
+            return list[counter]
+            
+######please find a better way to do this lol
