@@ -1,0 +1,11 @@
+def getCount(inputStr):
+    num_vowels = 0
+    word = 'aeiou'
+    
+    for char in inputStr:
+        if char in word:
+            num_vowels += 1
+    
+    return num_vowels
+    
+    # given a string count the number of vowels in the string
