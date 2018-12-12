@@ -1,0 +1,5 @@
+    intList=sorted([i for i in arr if type(i) is int])
+    strList=sorted([i for i in arr if type(i) is str])
+    return (intList+strList)
+    
+# script that sorts int and str values in a given array. breaks main array into 2 lists and then gets merged back together
