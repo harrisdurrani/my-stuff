@@ -1,0 +1,4 @@
+def my_languages(results):
+    return [key for key, value in sorted(results.items(), key = lambda x:-x[-1]) if value >= 60]
+    
+    # given a dictionary, script returns all of the keys if the values are greater or equal to 60
