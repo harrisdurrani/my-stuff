@@ -1,0 +1,30 @@
+def capitalize(s):
+    even = []
+    odd = []
+    final = []
+    count = 0
+    count2 = 0
+    new = list(s)
+    for i in new:
+      if count % 2 == 0:
+      
+        even.append(i.upper())
+      else:
+        even.append(i)
+      count += 1
+
+    for i in new:
+      if count2 % 2 == 1:
+        odd.append(i.upper())
+      else:
+        odd.append(i)
+      count2 += 1
+    alpha = ''.join(even)
+    beta = ''.join(odd)
+    
+    final.append(alpha)
+    final.append(beta)
+    
+    return final
+    
+    #capitalizes every other letter in array (badly)
